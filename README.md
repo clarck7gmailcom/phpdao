@@ -1,4 +1,8 @@
-# 通过ERC6551标准实现在HID医保卡（本质为NFT）的基础上生成代理地址
-#### 我们是想通过HID这个NFT（不可交易，只归一人所有，并且绑定了这个人的个人信息，一人只能mint一次，而且要通过默克尔树的验证，只能铸造和销毁，以下称为1代NFT）的基础上
-#### 实现再次mint一种NFT（可以交易，以下称为2代NFT，绑定用户的病情数据）。我们的本意是2代NFT可以交易，相当于用户可以通过自己的数据来赚钱治疗
-#### 由于时间有限，2代NFT的交易功能我们还未实现
+This Repo is the smart contract of 'Patients help patients DAO' which offers users to mint their decentralized health identity (DHID). 
+'PatHient' is the decentralized community-driven health data asset bank.
+
+<DHID-contract>
+This is based on ERC-721. The DHID is only owned by the original holder which means it's not tradable like Soulbound token. It's similar to the health insurance card but there's no personal information in the DHID. 
+  
+<ERC6551-data NFT asset>
+This is based on ERC-6551. The data NFT asset is belong to the DHID NFT which is a kind of wallet, and the data NFT asset is the token in the wallet. The asset can be invested, curate, trade, etc. But the (data NFT) asset is not able to transfer to others because the health data is belong to patients. Patients can upload data and mint it as the NFT which belong to the wallet - DHID. Now this part is still in developing.
